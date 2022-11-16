@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bem Vindo Cartas OP</title>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style-2.css">
+        <script src="../js/inicio.js" defer></script>
+        <!-- CSS only -->
+    </head>
+    <body>
+        <div class="container-form">
+            <div class="info">
+                <button onclick="abrirDialog()" class="btn-info" type="button">
+                    <img src="../imagens/info.png" alt="info">
+                </button>
+            </div>
+            <div>
+                <img class="img_logo" src="../imagens/fundoContainer.png" alt="Logo One Piece">
+            </div>
+            <h1>one piece </h1>
+            <span>Cartas</span>
+            <form class="form" id="form">
+                <input type="text" id="input" class="input" placeholder="Seu nome...">
+                <button id="bt" class="disabled" type="submit" disabled>Jogar</button>
+            </form>
+        </div>
+        <dialog id="ModalPop" class="modalPop">
+            <div>
+                <h2 class="textModal">instruções do Jogo</h2>
+                <p>1 - clique sobre as cartas para revelar </p>
+                <p>2 - Selecione duas cartas, se ambas forem iguais você acertou enão basta prossegui até acertar todas</p>
+                <p>3 - Você tera um tempo de 200 segundos</p>
+                <p>4 - ao acabar o tempo ou quando você ganhar poderá reiniciar o jogo clicando no botão sim da mensagem "Jogar Novamente ?" ou recusar em Não</p>
+                <p>5 - Ao ganhar poderá ver no final do jogo o tempo que você usou dos 100 segundos</p>
+                <div class="btn-voltar">
+                    <button id="btn" onclick="removeDialog()" type="button">Voltar</button>
+                </div>
+            </div>
+            
+        </dialog>
+    </body>
+</html>
